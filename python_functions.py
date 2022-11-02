@@ -34,3 +34,17 @@ print('Number of occurrences: ', occurrences('fleep floop', 'p')   )
 print('Number of occurrences: ', occurrences('fleep floop', 'e'))   
 print('Number of occurrences: ', occurrences('fleep floop', 'ee') ) 
 print('Number of occurrences: ', occurrences('fleep floop', 'fe') ) 
+
+
+#? 4. Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on args.
+
+def product(*args):
+  total = 1 
+  for num in args:
+    total *= num
+  return total
+
+
+print('Product of all numbers is: ', product(-1, 4))
+print('Product of all numbers is: ', product(2, 5, 5))
+print('Product of all numbers is: ', product(4, 0.5, 5))
